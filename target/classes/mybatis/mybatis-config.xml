@@ -3,6 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
-
+<typeAliases>
+	<typeAlias type="com.recruitschool.hrd.model.Hrd" alias="Hrd"/> 
+</typeAliases>
+<mappers>
+    <mapper resource="com/recruitschool/hrd/model/HrdMapper.xml"/>
+</mappers> 
 </configuration>

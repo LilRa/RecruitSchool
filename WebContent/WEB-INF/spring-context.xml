@@ -12,6 +12,8 @@
 	p:prefix="/"
 	p:suffix=".jsp"/>
 	
-<bean />
-	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/mysql" resource-ref="true"/>
+	<bean id="recruitController" class="com.recuritshool.RecruitController"
+	p:hrdService-ref="hrdServicImpl"/>
+	
+<!-- 	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/mysql" resource-ref="true"/> -->
 </beans>

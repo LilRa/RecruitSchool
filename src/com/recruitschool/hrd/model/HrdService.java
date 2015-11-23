@@ -1,5 +1,9 @@
 package com.recruitschool.hrd.model;
 
+import java.util.List;
+
 public interface HrdService {
-	public int hrdInsert(Hrd hrd);
+	
+	public List hrdSelectAll();
+	public int hrdInsertAll(List<Hrd> list);
 }
